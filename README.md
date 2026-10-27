@@ -1,6 +1,6 @@
 # Tic-Tac-Toe (Java) 
 
-Klassisches Tic-Tac-Toe für 2 Spieler in der Java-Konsole.
+Klassisches Tic-Tac-Toe für 2 Spieler in der Java-Konsole. After the calculator, I wanted to build something more interactive. This is a two-player Tic-Tac-Toe game running in the Java console. I implemented the full game logic from scratch: a 3×3 grid using a 2D array, alternating turns between Player X and Player O, win detection across all rows, columns, and diagonals, and a draw condition check. It was a great exercise in control flow, array manipulation, and structuring a small program with multiple methods
 
 ## Technologien
 - Java 17+
