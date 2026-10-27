@@ -57,11 +57,11 @@ public class TicTacToe {
     // ── Placer un coup / Zug setzen ───────────────────────────────────────
     static boolean placerCoup(int ligne, int col) {
         if (ligne < 0 || ligne > 2 || col < 0 || col > 2) {
-            System.out.println("❌ Ungültige Position! Werte zwischen 1 und 3 eingeben.");
+            System.out.println(" Ungültige Position! Werte zwischen 1 und 3 eingeben.");
             return false;
         }
         if (plateau[ligne][col] != ' ') {
-            System.out.println("❌ Dieses Feld ist bereits besetzt!");
+            System.out.println(" Dieses Feld ist bereits besetzt!");
             return false;
         }
         plateau[ligne][col] = joueurActuel;
@@ -78,7 +78,7 @@ public class TicTacToe {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("╔══════════════════════════════╗");
-        System.out.println("║       TIC-TAC-TOE  ❌⭕       ║");
+        System.out.println("║          TIC-TAC-TOE         ║");
         System.out.println("╚══════════════════════════════╝");
         System.out.println("Spieler 1 = X  |  Spieler 2 = O");
         System.out.println("Eingabe: Zeile (1-3) dann Spalte (1-3)");
@@ -98,11 +98,11 @@ public class TicTacToe {
 
             if (aGagne(joueurActuel)) {
                 afficherPlateau();
-                System.out.printf("🏆 Spieler %c gewinnt! Herzlichen Glückwunsch!%n", joueurActuel);
+                System.out.printf(" Spieler %c gewinnt! Herzlichen Glückwunsch!%n", joueurActuel);
                 partieEnCours = false;
             } else if (estNul()) {
                 afficherPlateau();
-                System.out.println("🤝 Unentschieden! Gut gespielt!");
+                System.out.println(" Unentschieden! Gut gespielt!");
                 partieEnCours = false;
             } else {
                 changerJoueur();
