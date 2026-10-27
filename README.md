@@ -1,4 +1,4 @@
-# Tic-Tac-Toe (Java) ❌⭕
+# Tic-Tac-Toe (Java) 
 
 Klassisches Tic-Tac-Toe für 2 Spieler in der Java-Konsole.
 
